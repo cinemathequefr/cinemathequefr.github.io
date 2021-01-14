@@ -4,7 +4,7 @@
   export let segment;
 </script>
 
-<header>
+<header class="light">
   <div class="container">
     <a class="logo-container" href="."><Logo /></a>
 
@@ -126,13 +126,10 @@
     padding-bottom: 8px;
     border-bottom: solid 1px #a3fffa44;
     transform: translateY(9px);
-
-    /* margin-right: 12px; */
   }
 
   ul.menu2 li {
     align-self: auto;
-    /* outline: solid 1px green; */
   }
 
   ul.menu2 li a {
@@ -153,13 +150,6 @@
     padding-right: 0px;
   }
 
-  /*
-  ul.menu2 li a:hover,
-  ul.menu2 li a:active {
-    color: red;
-  }
-  */
-
   ul.menu1 {
     display: flex;
     width: 100%;
@@ -171,7 +161,7 @@
 
   ul.menu1 li {
     align-self: auto;
-    flex: 1 1 auto; /* outline: solid 1px green; */
+    flex: 1 1 auto;
   }
 
   ul.menu1 li a {
@@ -188,20 +178,6 @@
     background-color: #a3fffa44;
     color: #a3fffa;
   }
-  /* 
-  ul.menu1 li:first-child a {
-    padding-left: 0;
-  }
-  ul.menu1 li:last-child a {
-    padding-right: 0px;
-  } */
-
-  /*
-  ul.menu1 li a:hover,
-  ul.menu1 li a:active {
-    color: red;
-  }
-*/
 
   :global(svg.logo) {
     display: inline-block;
@@ -209,25 +185,38 @@
     fill: #fff;
     transition: 0.2s;
   }
-  /* 
-  :global(svg.logo:hover) {
-    fill: #a3fffa;
-  }
-  */
-
   a.logo-container {
     position: absolute;
     display: inline-block;
     height: 60px;
     top: 36px;
-    /* outline: solid 1px green; */
   }
 
-  /*
-  :global(.search-container),
-  ul.menu1,
-  ul.menu2 {
-    outline: solid 1px red !important;
+  .light {
+    background-color: #fff;
+    color: #000;
+    border-bottom: solid 1px #ccc;
   }
-  */
+
+  .light :global(svg.logo) {
+    fill: #000;
+  }
+
+  .light a:hover,
+  .light a:active {
+    color: inherit;
+  }
+  .light ul.menu1 li a[aria-current="page"] {
+    /* background-color: #a3fffa; */
+    background-color: inherit;
+    color: inherit;
+  }
+
+  .light ul.menu2 {
+    border-bottom: solid 3px #a3fffa;
+  }
+
+  .light ul.menu2 li a[aria-current="page"] {
+    color: inherit;
+  }
 </style>

@@ -8,5 +8,10 @@
   <slot />
 </main>
 
+<!--
+<div class="extra">
+  <a href="charte">Charte visuelle</a>
+</div>
+-->
 <style>
 </style>
