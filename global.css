@@ -30,6 +30,11 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:active {
+  color: #a3fffa;
+}
+
 ul,
 li {
   list-style-type: none;
