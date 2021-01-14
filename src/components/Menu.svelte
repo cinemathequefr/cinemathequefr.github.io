@@ -178,7 +178,7 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.125rem;
-    padding: 12px 4px 6px 4px;
+    padding: 12px 4px 2px 4px;
     border-bottom: solid 5px transparent;
     margin-bottom: 2px;
     transition: 0.2s;
