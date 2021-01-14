@@ -104,8 +104,8 @@
 
 <style>
   header {
-    background-color: #000;
-    color: #eee;
+    background-color: #fff;
+    color: #000;
   }
   .container {
     display: flex;
@@ -114,6 +114,12 @@
     justify-content: space-between;
     min-height: 180px;
     padding: 16px 0 0 0;
+    border-bottom: solid 1px #ccc;
+  }
+
+  a:hover,
+  a:active {
+    color: inherit;
   }
 
   ul.menu2 {
@@ -123,8 +129,8 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     align-content: stretch;
-    padding-bottom: 8px;
-    border-bottom: solid 1px #a3fffa44;
+    padding-bottom: 2px;
+    border-bottom: solid 1px #ccc;
     transform: translateY(9px);
   }
 
@@ -137,17 +143,20 @@
     font-family: "Source Sans Pro";
     font-weight: 300;
     font-size: 1rem;
-    padding: 4px 8px;
+    color: #666;
+    padding: 4px 2px 2px 2px;
+    margin: 0 6px;
+    border-bottom: solid 5px transparent;
     transition: 0.2s;
   }
   ul.menu2 li a[aria-current="page"] {
-    color: #a3fffa;
+    border-bottom-color: #2e9994;
   }
   ul.menu2 li:first-child a {
-    padding-left: 0;
+    margin-left: 0;
   }
   ul.menu2 li:last-child a {
-    padding-right: 0px;
+    margin-right: 0px;
   }
 
   ul.menu1 {
@@ -156,12 +165,11 @@
     align-self: flex-end;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   ul.menu1 li {
     align-self: auto;
-    flex: 1 1 auto;
   }
 
   ul.menu1 li a {
@@ -170,19 +178,21 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.125rem;
-    padding: 12px 4px;
+    padding: 12px 4px 6px 4px;
+    border-bottom: solid 5px transparent;
+    margin-bottom: 2px;
     transition: 0.2s;
     text-align: center;
   }
   ul.menu1 li a[aria-current="page"] {
-    background-color: #a3fffa44;
-    color: #a3fffa;
+    border-bottom-color: #2e9994;
   }
 
   :global(svg.logo) {
     display: inline-block;
+    margin-left: 4px;
     height: 100%;
-    fill: #fff;
+    fill: #000;
     transition: 0.2s;
   }
   a.logo-container {
@@ -190,33 +200,5 @@
     display: inline-block;
     height: 60px;
     top: 36px;
-  }
-
-  .light {
-    background-color: #fff;
-    color: #000;
-    border-bottom: solid 1px #ccc;
-  }
-
-  .light :global(svg.logo) {
-    fill: #000;
-  }
-
-  .light a:hover,
-  .light a:active {
-    color: inherit;
-  }
-  .light ul.menu1 li a[aria-current="page"] {
-    /* background-color: #a3fffa; */
-    background-color: inherit;
-    color: inherit;
-  }
-
-  .light ul.menu2 {
-    border-bottom: solid 3px #a3fffa;
-  }
-
-  .light ul.menu2 li a[aria-current="page"] {
-    color: inherit;
   }
 </style>
