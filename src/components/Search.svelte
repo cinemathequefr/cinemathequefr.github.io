@@ -1,3 +1,8 @@
+<div class="search-container">
+  <input class="search" type="text" placeholder="Chercher sur le site" />
+  <button class="search-button" />
+</div>
+
 <style>
   input[type="text"] {
     font-family: "Source Sans Pro";
@@ -20,7 +25,7 @@
     justify-content: flex-start;
     align-content: stretch;
     align-items: flex-start;
-    border-radius: 0px;
+    border-radius: 6px;
     background-color: #eee;
     margin: 0;
     /* margin: 0 12px 0 0; */
@@ -55,8 +60,3 @@
     cursor: pointer;
   }
 </style>
-
-<div class="search-container">
-  <input class="search" type="text" placeholder="Chercher sur le site" />
-  <button class="search-button" />
-</div>
