@@ -1,11 +1,15 @@
 <script>
+  import { selected } from "../stores.js";
+
+  let days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
 </script>
 
 <nav>
   <ul>
-    <li class="selected">Aujourd'hui</li>
-    <li>Demain</li>
-    <li>Mardi</li>
+    {#each days as day, i}
+      <li class:selected={i === 0}>{day}</li>
+      <!-- <li class:selected={i === $selected}>{day}</li> -->
+    {/each}
   </ul>
 </nav>
 
