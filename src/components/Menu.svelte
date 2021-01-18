@@ -114,7 +114,7 @@
     justify-content: space-between;
     min-height: 180px;
     padding: 16px 0 0 0;
-    border-bottom: solid 1px #ccc;
+    border-bottom: solid 1px #eee;
   }
 
   a:hover,
@@ -130,7 +130,7 @@
     justify-content: flex-end;
     align-content: stretch;
     padding-bottom: 2px;
-    border-bottom: solid 1px #ccc;
+    border-bottom: solid 1px #eee;
     transform: translateY(9px);
   }
 
@@ -145,8 +145,8 @@
     font-size: 1rem;
     color: #666;
     padding: 4px 2px 2px 2px;
-    margin: 0 6px;
-    border-bottom: solid 5px transparent;
+    margin: 0 4px;
+    border-bottom: solid 3px transparent;
     transition: 0.2s;
   }
   ul.menu2 li a[aria-current="page"] {
@@ -165,7 +165,8 @@
     align-self: flex-end;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
+    /* justify-content: space-between; */
   }
 
   ul.menu1 li {
@@ -179,6 +180,7 @@
     font-weight: 600;
     font-size: 1.125rem;
     padding: 12px 4px 2px 4px;
+    margin: 0 4px;
     border-bottom: solid 5px transparent;
     margin-bottom: 2px;
     transition: 0.2s;

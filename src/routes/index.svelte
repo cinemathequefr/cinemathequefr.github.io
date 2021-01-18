@@ -1,14 +1,19 @@
 <script>
+  import CalendarHome from "../components/CalendarHome.svelte";
 </script>
-
-<style>
-</style>
 
 <svelte:head>
   <title>[CFv35] La Cinémathèque française</title>
 </svelte:head>
-<section>
+<section class="calendar-container">
   <div class="container">
-    <h1>Homepage</h1>
+    <CalendarHome />
   </div>
 </section>
+
+<style>
+  .calendar-container {
+    background-color: #eff;
+    height: 350px;
+  }
+</style>
