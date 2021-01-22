@@ -150,7 +150,7 @@
     transition: 0.2s;
   }
   ul.menu2 li a[aria-current="page"] {
-    border-bottom-color: #2e9994;
+    border-bottom-color: #83f8dd;
   }
   ul.menu2 li:first-child a {
     margin-left: 0;
@@ -187,7 +187,7 @@
     text-align: center;
   }
   ul.menu1 li a[aria-current="page"] {
-    border-bottom-color: #2e9994;
+    border-bottom-color: #83f8dd;
   }
 
   :global(svg.logo) {
@@ -201,6 +201,6 @@
     position: absolute;
     display: inline-block;
     height: 60px;
-    top: 36px;
+    top: 50px;
   }
 </style>

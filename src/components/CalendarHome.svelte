@@ -1,15 +1,21 @@
 <script>
   import { selected } from "../stores.js";
-
-  let days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
+  let days = ["Vendredi", "Samedi", "Dimanche"];
 </script>
 
 <nav>
   <ul>
-    {#each days as day, i}
-      <li class:selected={i === 0}>{day}</li>
-      <!-- <li class:selected={i === $selected}>{day}</li> -->
-    {/each}
+    {#if process.browser}
+      {#each days as day, i}
+        <li
+          data-id={i}
+          on:click={(e) => {
+            selected.set(e.target.dataset.id);
+          }}
+          class:selected={i == $selected}>{day}</li
+        >
+      {/each}
+    {/if}
   </ul>
 </nav>
 
